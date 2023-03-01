@@ -2,9 +2,12 @@ import React from 'react'
 import { FaHtml5 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
+import fondo from './../fondo.jpeg';
+
 const ServiceCard = ({ url, id, title }) => {
     return (
-        <div className="card my-3">
+        <div className="card my-3" style={{ background: `url(${fondo})`, backgroundSize: 'cover', backgroundPosition: 'center center'}}>
             <FaHtml5 className="mx-auto mt-5 text-danger" size={64} />
             <div className="card-body text-center">
                 <h5 className="card-title">{title}</h5>
